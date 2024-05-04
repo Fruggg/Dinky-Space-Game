@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a712435f97cf5d498519eea3bcc85f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 130
   kaboom: {fileID: 8535318333706694221, guid: 08ce9deac1b96a749bc55b6e68b1112f, type: 3}
   damagingTag: Enemy
 --- !u!114 &4627816055484734905

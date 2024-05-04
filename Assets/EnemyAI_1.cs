@@ -1,19 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI_1 : MonoBehaviour
 {
-    // public 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+//not used, but I didn't want to touch it and break like everything
 }

@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class LaserScript : MonoBehaviour
@@ -12,7 +9,7 @@ public class LaserScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.right * speed * Math.Sign(transform.localScale.x);
+        transform.position += Time.deltaTime * Vector3.right * speed * Math.Sign(transform.localScale.x);
     }
     public void OnTriggerEnter2D(UnityEngine.Collider2D col)
     {

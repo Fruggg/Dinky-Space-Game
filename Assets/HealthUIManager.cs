@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -27,9 +25,9 @@ public class HealthUIManager : MonoBehaviour
         health = value;
         //For each value of health
         List<GameObject> spawnedSprites = spriteContainer.GetComponentsInChildren<Transform>().Select(x => x.gameObject).ToList();
-        Debug.Log("hmama" + value);
+        
 
-       
+        //Kill the ones that don't fit the mold of my society (Excess health begone)
           for (int i = spawnedSprites.Count - 1; i > value; i--)
         {
             Destroy(spawnedSprites[i]);
@@ -47,7 +45,6 @@ public class HealthUIManager : MonoBehaviour
                 spawnedSprites.Insert(i, Instantiate(healthSpritePrefab, spriteContainer));
             }
         }
-        //Kill the ones that don't fit the mold of my society (Excess health begone)
       
     }
 

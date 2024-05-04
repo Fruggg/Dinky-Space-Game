@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.Universal.Internal;
 
+//Functions to destroy an object after some time
 public class DestroysItself : MonoBehaviour
 {
     public float timeAlive = 1; 
-    // Start is called before the first frame update
+
     void Start()
     {
+        //uses invokeRepeating to use the method after a delay; this doesn't repeat, as this object (and script) are both destroyed.
         InvokeRepeating(nameof(Kaboom), timeAlive, 1);
     }
 

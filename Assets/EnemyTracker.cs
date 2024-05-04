@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
+//Sloppy utility to see how many enemies there are; if I have infinite time, this would be much nicer, more complicated, scalable, and like 5 times the size
 
 public class EnemyTracker : MonoBehaviour
 {

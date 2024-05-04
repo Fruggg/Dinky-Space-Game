@@ -281,7 +281,7 @@ namespace SingularityGroup.HotReload.Editor {
                 }
             }
 
-            // At the end to not fuck up rendering https://answers.unity.com/questions/400454/argumentexception-getting-control-0s-position-in-a-1.html
+            // At the end to not frick up rendering https://answers.unity.com/questions/400454/argumentexception-getting-control-0s-position-in-a-1.html
             var renderStart = !EditorCodePatcher.Running && !EditorCodePatcher.Starting && !currentState.requestingDownloadAndRun && currentState.redeemStage == RedeemStage.None;
             var e = Event.current;
             if (renderStart && e.type == EventType.KeyUp
